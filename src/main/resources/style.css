@@ -1,0 +1,501 @@
+/* LauncherMC — тёмная тема */
+
+.root {
+    -fx-font-family: "Segoe UI", "SF Pro Text", "Roboto", "Arial";
+    -fx-font-size: 13px;
+}
+
+.label {
+    -fx-text-fill: #e7ebf5;
+}
+
+.app-root {
+    -fx-background-color: linear-gradient(to bottom right, #12141b, #171a24 55%, #141824);
+}
+
+/* ------------------------------ заголовок окна ------------------------------ */
+
+.title-bar {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #232838 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.title-text {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f2f5ff;
+}
+
+.version-chip {
+    -fx-background-color: rgba(88, 101, 242, 0.18);
+    -fx-text-fill: #aab4ff;
+    -fx-background-radius: 20;
+    -fx-padding: 2 9;
+    -fx-font-size: 11px;
+}
+
+.window-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #aab2c8;
+    -fx-font-size: 14px;
+    -fx-min-width: 30px;
+    -fx-min-height: 26px;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.window-button:hover {
+    -fx-background-color: #2a3040;
+    -fx-text-fill: #ffffff;
+}
+
+.window-close:hover {
+    -fx-background-color: #e04646;
+    -fx-text-fill: #ffffff;
+}
+
+/* ------------------------------ контент ------------------------------ */
+
+.content {
+    -fx-background-color: transparent;
+}
+
+.hero {
+    -fx-background-color: linear-gradient(to bottom, #1c2130, #191d29);
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: #262c3c;
+    -fx-border-width: 1;
+}
+
+.hero-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.hero-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #8d97b0;
+}
+
+.chip {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #c3cade;
+    -fx-background-radius: 20;
+    -fx-padding: 3 10;
+    -fx-font-size: 11px;
+}
+
+.stat-caption {
+    -fx-text-fill: #7c869e;
+    -fx-font-size: 11px;
+}
+
+.stat-value {
+    -fx-text-fill: #f1f4ff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.footnote {
+    -fx-text-fill: #5f6880;
+    -fx-font-size: 10px;
+}
+
+.bullet {
+    -fx-text-fill: #a7b0c6;
+    -fx-font-size: 11px;
+}
+
+.card {
+    -fx-background-color: #1a1e29;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: #262c3c;
+    -fx-border-width: 1;
+}
+
+.section-title {
+    -fx-text-fill: #eef1fa;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.hint {
+    -fx-text-fill: #7f89a1;
+    -fx-font-size: 11px;
+}
+
+.footnote, .hint {
+    -fx-line-spacing: 1px;
+}
+
+/* ------------------------------ поля и списки ------------------------------ */
+
+.text-field {
+    -fx-background-color: #12151d;
+    -fx-text-fill: #eef1fa;
+    -fx-prompt-text-fill: #606a82;
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-border-color: #2b3140;
+    -fx-border-width: 1;
+    -fx-padding: 9 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #5865F2;
+    -fx-background-color: #141824;
+}
+
+.version-selector {
+    -fx-background-color: #12151d;
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-border-color: #2b3140;
+    -fx-border-width: 1;
+    -fx-padding: 2 4;
+}
+
+.version-selector:hover {
+    -fx-border-color: #3b4358;
+}
+
+.version-selector:focused,
+.version-selector:showing {
+    -fx-border-color: #5865F2;
+}
+
+.version-selector > .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #eef1fa;
+    -fx-padding: 7 8;
+}
+
+.version-selector .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.version-selector .arrow {
+    -fx-background-color: #98a2ba;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #1b1f2b;
+    -fx-border-color: #2d3444;
+    -fx-border-radius: 9;
+    -fx-background-radius: 9;
+    -fx-padding: 4;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d9dfee;
+    -fx-padding: 7 10;
+    -fx-background-radius: 7;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #252b3a;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #2e3652;
+}
+
+.version-name {
+    -fx-text-fill: #e7ebf5;
+    -fx-font-size: 13px;
+}
+
+.type-badge {
+    -fx-padding: 1 7;
+    -fx-background-radius: 20;
+    -fx-font-size: 10px;
+}
+
+.type-release {
+    -fx-background-color: rgba(52, 211, 153, 0.16);
+    -fx-text-fill: #34d399;
+}
+
+.type-snapshot {
+    -fx-background-color: rgba(96, 165, 250, 0.16);
+    -fx-text-fill: #60a5fa;
+}
+
+.type-beta {
+    -fx-background-color: rgba(251, 191, 36, 0.16);
+    -fx-text-fill: #fbbf24;
+}
+
+.type-alpha {
+    -fx-background-color: rgba(248, 113, 113, 0.16);
+    -fx-text-fill: #f87171;
+}
+
+.type-unknown {
+    -fx-background-color: rgba(148, 163, 184, 0.16);
+    -fx-text-fill: #94a3b8;
+}
+
+/* ------------------------------ кнопки ------------------------------ */
+
+.button-primary {
+    -fx-background-color: linear-gradient(to right, #5865F2, #7c5cf0);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 11 22;
+    -fx-background-radius: 9;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover {
+    -fx-background-color: linear-gradient(to right, #6873ff, #8d6bff);
+}
+
+.button-primary:pressed {
+    -fx-background-color: linear-gradient(to right, #4b57dd, #6a4cdb);
+}
+
+.button-secondary {
+    -fx-background-color: #242a39;
+    -fx-text-fill: #dfe5f3;
+    -fx-padding: 11 18;
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-border-color: #313849;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #2c3345;
+}
+
+.button-ghost {
+    -fx-background-color: transparent;
+    -fx-text-fill: #a8b1c7;
+    -fx-padding: 5 9;
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+}
+
+.button-ghost:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #eef1fa;
+}
+
+.button-icon {
+    -fx-background-color: #242a39;
+    -fx-text-fill: #cfd6e8;
+    -fx-font-size: 16px;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-border-color: #313849;
+    -fx-cursor: hand;
+}
+
+.button-icon:hover {
+    -fx-background-color: #2c3345;
+}
+
+.button:disabled {
+    -fx-opacity: 0.45;
+    -fx-cursor: default;
+}
+
+/* ------------------------------ чекбоксы ------------------------------ */
+
+.check-box {
+    -fx-text-fill: #b9c1d4;
+    -fx-font-size: 11px;
+    -fx-cursor: hand;
+}
+
+.check-box .box {
+    -fx-background-color: #12151d;
+    -fx-border-color: #3a4256;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 3;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #5865F2;
+    -fx-border-color: #5865F2;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #ffffff;
+}
+
+.check-box:hover .box {
+    -fx-border-color: #5865F2;
+}
+
+/* ------------------------------ прогресс и статус ------------------------------ */
+
+.progress-bar {
+    -fx-pref-height: 6px;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #232838;
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(to right, #5865F2, #a855f7);
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+}
+
+.status-text {
+    -fx-text-fill: #9aa4bb;
+    -fx-font-size: 11px;
+}
+
+.install-label {
+    -fx-text-fill: #7c869e;
+    -fx-font-size: 11px;
+}
+
+.install-ok {
+    -fx-text-fill: #34d399;
+}
+
+.install-missing {
+    -fx-text-fill: #f0b35f;
+}
+
+.error-label {
+    -fx-background-color: rgba(224, 70, 70, 0.12);
+    -fx-border-color: rgba(224, 70, 70, 0.35);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: #ff9d9d;
+    -fx-padding: 8 11;
+    -fx-font-size: 11px;
+}
+
+.console-area {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #0f1116;
+    -fx-text-fill: #9fe3b4;
+    -fx-font-family: "Cascadia Mono", "Consolas", "Menlo", monospace;
+    -fx-font-size: 11px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #232838;
+}
+
+.console-area .content {
+    -fx-background-color: #0f1116;
+    -fx-background-radius: 8;
+}
+
+.console-area .scroll-pane,
+.console-area .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ------------------------------ статус-бар ------------------------------ */
+
+.status-bar {
+    -fx-background-color: transparent;
+    -fx-border-color: #232838 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+.status-dot {
+    -fx-text-fill: #34d399;
+    -fx-font-size: 10px;
+}
+
+/* ------------------------------ настройки и диалоги ------------------------------ */
+
+.settings-root {
+    -fx-background-color: #171b25;
+}
+
+.settings-scroll {
+    -fx-background-color: #171b25;
+    -fx-background: #171b25;
+}
+
+.settings-scroll > .viewport {
+    -fx-background-color: #171b25;
+}
+
+.dialog-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.auth-code {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8b9bff;
+    -fx-padding: 8 0 8 0;
+}
+
+.memory-slider .track {
+    -fx-background-color: #262c3c;
+    -fx-background-radius: 4;
+    -fx-pref-height: 5px;
+}
+
+.memory-slider .thumb {
+    -fx-background-color: #6d7bff;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 16px;
+    -fx-pref-height: 16px;
+}
+
+.dialog-pane {
+    -fx-background-color: #171b25;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: #dfe5f3;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1d2230;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+
+/* ------------------------------ скроллбары ------------------------------ */
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #394154;
+    -fx-background-radius: 6;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}

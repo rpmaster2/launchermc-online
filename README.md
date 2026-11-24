@@ -26,7 +26,7 @@
 
 LauncherMC downloads Minecraft: Java Edition versions from Mojang's public CDN, verifies the files, asks you to sign in with Microsoft and checks your Java Edition licence before launching the official client. Everything is stored in one portable folder.
 
-> **Current status:** the application requires Mojang allow-list approval for its Microsoft client ID. Until the client ID is approved, `login_with_xbox` returns `403 Invalid app registration`; the launcher explains this and points to the official application process.
+> **Mojang allow-list:** LauncherMC's Microsoft client ID was approved on **24 November 2026**. Microsoft sign-in works out of the box. Forks or custom client IDs still need their own Mojang approval.
 
 ### Features
 
@@ -65,7 +65,12 @@ Mojang now requires third-party client IDs to be added to an allow-list. A new a
 
 ### Install
 
-A binary release will be published after Mojang allow-list approval. Until then the project can be built from source.
+Download the latest release:
+
+- Windows: [`windows.zip`](https://github.com/rpmaster2/launchermc-online/releases/latest/download/windows.zip) (JRE 21 included)
+- macOS / Linux: [`launchermc.jar`](https://github.com/rpmaster2/launchermc-online/releases/latest/download/launchermc.jar) (Java 21+)
+
+Or build from source below.
 
 ### Build from source
 
@@ -173,7 +178,7 @@ LauncherMC is **not affiliated with Mojang Studios or Microsoft**. Minecraft is 
 
 LauncherMC скачивает версии Minecraft: Java Edition с официального CDN Mojang, проверяет файлы, требует вход Microsoft и проверяет лицензию Java Edition перед запуском официального клиента. Всё хранится в одной переносимой папке.
 
-> **Текущий статус:** client ID приложения должен быть одобрен Mojang (allow-list). До одобрения `login_with_xbox` возвращает `403 Invalid app registration`; лаунчер объясняет это и показывает ссылку на официальную заявку.
+> **Mojang allow-list:** client ID приложения LauncherMC одобрен **24 ноября 2026**. Вход Microsoft работает сразу. Форкам и своим client ID всё равно нужно отдельное одобрение Mojang.
 
 ### Возможности
 
@@ -212,7 +217,12 @@ Mojang требует добавить client ID сторонних прилож
 
 ### Установка
 
-Бинарный релиз будет опубликован после одобрения Mojang. До этого проект можно собрать из исходников.
+Скачайте последний релиз:
+
+- Windows: [`windows.zip`](https://github.com/rpmaster2/launchermc-online/releases/latest/download/windows.zip) (JRE 21 внутри)
+- macOS / Linux: [`launchermc.jar`](https://github.com/rpmaster2/launchermc-online/releases/latest/download/launchermc.jar) (Java 21+)
+
+Либо соберите из исходников ниже.
 
 ### Сборка
 

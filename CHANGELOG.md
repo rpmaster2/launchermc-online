@@ -13,6 +13,8 @@
 ### Changed
 - Microsoft sign-in and a successful Java Edition entitlement check are required
   before the game can be started.
+- **Mojang allow-list approval received on 24 November 2026**; the official
+  LauncherMC client ID can now call `login_with_xbox`. Forks still need approval.
 - Mojang allow-list rejection (`Invalid app registration`) shows a clear dialog
   with the official application link.
 - README and `PRIVACY.md` describe the online-only build.
